@@ -159,20 +159,15 @@ namespace WpfChatServer
 
         private string setString(string strN)
         {
-            string strRes = "";
             switch (strN)
             {
                 case "Ping":
-                    strRes = "Pong";
-                    break;
+                    return "Pong";
                 case "King":
-                    strRes = "Kong";
-                    break;
+                    return "Kong";
                 default:
-                    strRes = strN;
-                    break;
+                    return strN;
             }
-            return strRes;
         }
 
         private void SendMessage()
